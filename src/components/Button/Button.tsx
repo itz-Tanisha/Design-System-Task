@@ -29,8 +29,8 @@ const Button: React.FC<ButtonProps> = ({
 
             {label}
 
-            {icon && iconPlacement === "end" && <span>{icon}</span>}
-
+            {!loading && icon && iconPlacement === "end" && <span>{icon}</span>}
+            
         </button>
     )
 }
