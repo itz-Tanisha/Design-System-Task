@@ -10,13 +10,22 @@ const Button: React.FC<ButtonProps> = ({
     icon,
     iconPlacememt = "start",
     className,
+    loading = false,
+    disabled,
     ...otherprops
 }) => {
 
     return (
-        <button className={`${variant} ${size} ${className}`} {...otherprops}>
-
-            {icon && iconPlacememt === "start" && <span>{icon}</span>}
+        <button
+            className={`${variant} ${size} ${className}`}
+            disabled={disabled || loading}
+            {...otherprops}
+        >
+            {
+                loading
+                    ? <span className='button-loading-spinner'/>
+                    : (icon && iconPlacememt === "start" && <span>{icon}</span>)
+            }
 
             {label}
 

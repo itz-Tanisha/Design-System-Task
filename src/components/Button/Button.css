@@ -102,3 +102,21 @@ button:disabled {
 button:focus-visible:not(:disabled) {
     box-shadow: 0 2px 6px rgba(17, 24, 39, 0.25);
 }
+
+
+/* Loading spinner */
+
+.button-loading-spinner {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #222;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
