@@ -9,7 +9,7 @@ const Button: React.FC<ButtonProps> = ({
     size,
     icon,
     iconPlacememt = "start",
-    className,
+    className = "",
     loading = false,
     disabled,
     ...otherprops
