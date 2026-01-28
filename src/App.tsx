@@ -12,7 +12,7 @@ function App() {
         size="lg"
         variant="primary"
         icon={<span>✉</span>}
-        iconPlacememt="start"
+        iconPlacement="start"
         onClick={() => console.log("Email Sent !")}
       />
     </div>

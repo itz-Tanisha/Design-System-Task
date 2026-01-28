@@ -3,7 +3,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     size: 'xs' | 'sm' | 'md' | 'lg';
     variant: 'primary' | 'secondary' | 'tertiary';
     icon?: React.ReactNode;
-    iconPlacememt?: 'start' | 'end';
+    iconPlacement?: 'start' | 'end';
     loading?: boolean;
 }
 

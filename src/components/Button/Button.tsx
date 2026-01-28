@@ -8,7 +8,7 @@ const Button: React.FC<ButtonProps> = ({
     variant,
     size,
     icon,
-    iconPlacememt = "start",
+    iconPlacement = "start",
     className = "",
     loading = false,
     disabled,
@@ -24,12 +24,12 @@ const Button: React.FC<ButtonProps> = ({
             {
                 loading
                     ? <span className='button-loading-spinner'/>
-                    : (icon && iconPlacememt === "start" && <span>{icon}</span>)
+                    : (icon && iconPlacement === "start" && <span>{icon}</span>)
             }
 
             {label}
 
-            {icon && iconPlacememt === "end" && <span>{icon}</span>}
+            {icon && iconPlacement === "end" && <span>{icon}</span>}
 
         </button>
     )
