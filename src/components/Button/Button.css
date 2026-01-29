@@ -18,38 +18,38 @@ button {
 /* Variants */
 
 .button.primary {
-    background-color: #222;
-    color: #fff;
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 .button.secondary {
-    border: 1px solid #222;
-    color: #222;
-    background-color: #fff;
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+    background-color: var(--color-white);
 }
 
 .button.tertiary {
-    background-color: transparent;
-    color: #222;
+    background-color: var(--color-transparent);
+    color: var(--color-black);
 }
 
 
 /* Hover State */
 
 .button.primary:hover:not(:disabled) {
-    background-color: #525252;
+    background-color: var(--color-gray-900);
 }
 
 
 .button.secondary:hover:not(:disabled) {
-    background-color: #222;
-    color: #fff;
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 
 .button.tertiary:hover:not(:disabled) {
-    background-color: #ebebeb;
-    color: #222;
+    background-color: var(--color-gray-100);
+    color: var(--color-black);
 }
 
 
@@ -90,17 +90,17 @@ button {
 
 /* Disabled State */
 
-button:disabled {
-    background-color: #e5e7eb;
-    color: #9ca3af;
-    border-color: #e5e7eb;
+.button:disabled {
+    background-color:  var(--color-gray-200);
+    color: var(--color-gray-400);
+    border-color: var(--color-gray-200);
     cursor: not-allowed;
 }
 
 /* Focus state */
 
 button:focus-visible:not(:disabled) {
-    box-shadow: 0 2px 6px rgba(17, 24, 39, 0.25);
+    box-shadow: var(--focus-ring-shadow);
 }
 
 
@@ -109,8 +109,8 @@ button:focus-visible:not(:disabled) {
 .button-loading-spinner {
     width: 1rem;
     height: 1rem;
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    border-top-color: #222;
+    border: 2px solid var(--color-white-alpha-40);
+    border-top-color: var(--color-black);
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
 }

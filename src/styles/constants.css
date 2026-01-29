@@ -1,0 +1,15 @@
+:root {
+
+    /* Colors */
+    --color-transparent: transparent;
+    --color-black: #222;
+    --color-white: #fff;
+    --color-gray-100: #ebebeb;
+    --color-gray-200: #e5e7eb;
+    --color-gray-400: #9ca3af;
+    --color-gray-900: #525252;
+    --color-white-alpha-40: rgba(255, 255, 255, 0.4);
+    --focus-ring-shadow: 0 2px 6px rgba(17, 24, 39, 0.25);
+
+
+}
