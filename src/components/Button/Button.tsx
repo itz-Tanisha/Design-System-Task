@@ -3,36 +3,39 @@ import './Button.css'
 import type { ButtonProps } from '../../types/components/Button'
 
 
-const Button: React.FC<ButtonProps> = ({
-    label,
-    variant,
-    size,
-    startIcon,
-    endIcon,
-    className = "",
-    loading = false,
-    disabled,
-    ...otherprops
-}) => {
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+    ({
+        label,
+        variant,
+        size,
+        startIcon,
+        endIcon,
+        className = "",
+        loading = false,
+        disabled,
+        ...otherprops
+    }, ref) => {
 
-    return (
-        <button
-            className={`${variant} ${size} ${className}`}
-            disabled={disabled || loading}
-            {...otherprops}
-        >
-            {
-                loading
-                    ? <span className='button-loading-spinner' />
-                    : (startIcon && <span>{startIcon}</span>)
-            }
+        return (
+            <button
+                className={`${variant} ${size} ${className}`}
+                disabled={disabled || loading}
+                {...otherprops}
+                ref={ref}
+            >
+                {
+                    loading
+                        ? <span className='button-loading-spinner' />
+                        : (startIcon && <span>{startIcon}</span>)
+                }
 
-            {label}
+                {label}
 
-            {!loading && endIcon && <span>{endIcon}</span>}
+                {!loading && endIcon && <span>{endIcon}</span>}
 
-        </button>
-    )
-}
+            </button>
+        )
+    }
+)
 
 export default Button
