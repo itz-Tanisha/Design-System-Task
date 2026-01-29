@@ -18,7 +18,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
         return (
             <button
-                className={`${variant} ${size} ${className}`}
+                className={`${variant} ${size} ${className} button`}
                 disabled={disabled || loading}
                 {...otherprops}
                 ref={ref}

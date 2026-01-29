@@ -17,18 +17,18 @@ button {
 
 /* Variants */
 
-.primary {
+.button.primary {
     background-color: #222;
     color: #fff;
 }
 
-.secondary {
+.button.secondary {
     border: 1px solid #222;
     color: #222;
     background-color: #fff;
 }
 
-.tertiary {
+.button.tertiary {
     background-color: transparent;
     color: #222;
 }
@@ -36,18 +36,18 @@ button {
 
 /* Hover State */
 
-.primary:hover:not(:disabled) {
+.button.primary:hover:not(:disabled) {
     background-color: #525252;
 }
 
 
-.secondary:hover:not(:disabled) {
+.button.secondary:hover:not(:disabled) {
     background-color: #222;
     color: #fff;
 }
 
 
-.tertiary:hover:not(:disabled) {
+.button.tertiary:hover:not(:disabled) {
     background-color: #ebebeb;
     color: #222;
 }
@@ -56,7 +56,7 @@ button {
 /* Sizes */
 
 /* Extra small */
-.xs {
+.button.xs {
     padding: 0.25rem 0.5rem;
     font-size: 0.75rem;
     border-radius: 0.25rem;
@@ -64,7 +64,7 @@ button {
 }
 
 /* Small */
-.sm {
+.button.sm {
     padding: 0.375rem 0.75rem;
     font-size: 0.875rem;
     border-radius: 0.375rem;
@@ -72,7 +72,7 @@ button {
 }
 
 /* Medium */
-.md {
+.button.md {
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
     border-radius: 0.5rem;
@@ -80,7 +80,7 @@ button {
 }
 
 /* Large */
-.lg {
+.button.lg {
     padding: 0.75rem 1.25rem;
     font-size: 1rem;
     border-radius: 0.75rem;
@@ -107,16 +107,16 @@ button:focus-visible:not(:disabled) {
 /* Loading spinner */
 
 .button-loading-spinner {
-  width: 1rem;
-  height: 1rem;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-top-color: #222;
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-top-color: #222;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
 }
 
 @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
