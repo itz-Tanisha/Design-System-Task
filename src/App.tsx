@@ -4,9 +4,8 @@ function App() {
 
   return (
     <div
-      style={{ padding: "20px" }}
+      className="button-container"
     >
-      {/* Inline spacing just to display the Button component clearly */}
       <Button
         label="Send Email"
         size="lg"
