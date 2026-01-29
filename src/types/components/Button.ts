@@ -5,5 +5,6 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     startIcon?: React.ReactNode;
     endIcon?: React.ReactNode;
     loading?: boolean;
+    isSelected?: boolean;
 }
 

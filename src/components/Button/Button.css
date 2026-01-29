@@ -91,7 +91,7 @@ button {
 /* Disabled State */
 
 .button:disabled {
-    background-color:  var(--color-gray-200);
+    background-color: var(--color-gray-200);
     color: var(--color-gray-400);
     border-color: var(--color-gray-200);
     cursor: not-allowed;
@@ -119,4 +119,13 @@ button:focus-visible:not(:disabled) {
     to {
         transform: rotate(360deg);
     }
+}
+
+/* Selected State */
+.button.selected:not(:disabled) {
+    background-color: var(--color-red-400);
+}
+
+.button.selected:hover:not(:disabled) {
+    background-color: var(--color-red-300);
 }

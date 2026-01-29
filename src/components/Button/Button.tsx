@@ -13,12 +13,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         className = "",
         loading = false,
         disabled,
+        isSelected = false,
         ...otherprops
     }, ref) => {
 
         return (
             <button
-                className={`${variant} ${size} ${className} button`}
+                className={`${variant} ${size} ${className} button ${isSelected ? 'selected' : ''}`}
                 disabled={disabled || loading}
                 {...otherprops}
                 ref={ref}
