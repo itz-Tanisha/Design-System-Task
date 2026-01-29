@@ -10,8 +10,8 @@ function App() {
         label="Send Email"
         size="lg"
         variant="primary"
-        icon={<span>✉</span>}
-        iconPlacement="start"
+        startIcon={<span>⎙</span>}
+        endIcon={<span>➤</span>}
         onClick={() => console.log("Email Sent !")}
       />
     </div>
