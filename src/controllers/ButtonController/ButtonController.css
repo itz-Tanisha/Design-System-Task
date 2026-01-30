@@ -1,0 +1,93 @@
+.button-controller-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-wrappper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    min-width: 10vw;
+}
+
+/* Controller container */
+.button-controller-container {
+    width: 400px;
+    padding: 1rem;
+    border: 1px solid var(--color-gray-200);
+    border-radius: 0.5rem;
+    background-color: var(--color-white);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.button-controller-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+
+
+.button-controller-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+
+.button-controller-input-container label,
+.button-controller-checkbox-container label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-gray-700);
+    white-space: nowrap;
+    min-width: 60px;
+    cursor: inherit;
+}
+
+.button-controller-checkbox-container {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+/* Text input & select */
+.button-controller-input-container input[type="text"],
+.button-controller-input-container select {
+    flex: 1;
+    padding: 6px 8px;
+    font-size: 0.875rem;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 4px;
+    outline: none;
+}
+
+.button-controller-input-container input[type="text"]:focus,
+.button-controller-input-container select:focus {
+    border-color: var(--color-gray-800);
+}
+
+
+/* Icon toggle buttons */
+.button-controller-input-container button {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-gray-800);
+    background-color: var(--color-gray-50);
+    border: 1px solid var(--color-gray-300);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.button-controller-input-container button:hover {
+    background-color: var(--color-gray-150);
+    border-color: var(--color-gray-400);
+}

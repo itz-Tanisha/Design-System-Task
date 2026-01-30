@@ -1,19 +1,12 @@
-import Button from "./components/Button/Button"
+import ButtonController from "./controllers/ButtonController/ButtonController"
 
 function App() {
 
   return (
     <div
-      className="button-container"
+      className="container"
     >
-      <Button
-        label="Send Email"
-        size="lg"
-        variant="primary"
-        startIcon={<span>⎙</span>}
-        endIcon={<span>➤</span>}
-        onClick={() => console.log("Email Sent !")}
-      />
+      <ButtonController />
     </div>
   )
 }

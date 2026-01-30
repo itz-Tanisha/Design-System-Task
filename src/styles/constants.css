@@ -4,9 +4,14 @@
     --color-transparent: transparent;
     --color-black: #222;
     --color-white: #fff;
+    --color-gray-50: #f9fafb; 
     --color-gray-100: #ebebeb;
+    --color-gray-150: #f3f4f6; 
     --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db; 
     --color-gray-400: #9ca3af;
+    --color-gray-700: #374151;
+    --color-gray-800: #111827; 
     --color-gray-900: #525252;
     --color-white-alpha-40: rgba(255, 255, 255, 0.4);
     --focus-ring-shadow: 0 2px 6px rgba(17, 24, 39, 0.25);
