@@ -1,13 +1,9 @@
-import ButtonController from "./controllers/ButtonController/ButtonController"
+import StorybookLayout from "./components/StorybookLayout/StorybookLayout"
 
 function App() {
 
   return (
-    <div
-      className="container"
-    >
-      <ButtonController />
-    </div>
+      <StorybookLayout />
   )
 }
 

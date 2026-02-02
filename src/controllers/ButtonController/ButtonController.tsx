@@ -4,9 +4,11 @@ import './ButtonController.css'
 import Button from '../../components/Button/Button';
 import Controllers from './Controllers';
 
+type ButtonControllerProps = {
+    showControls: boolean
+}
 
-
-const ButtonController = () => {
+const ButtonController: React.FC<ButtonControllerProps> = ({ showControls }) => {
 
     const [buttonProps, setButtonProps] = useState<ButtonProps>({
         label: "Button Text",
@@ -27,11 +29,15 @@ const ButtonController = () => {
                     {...buttonProps}
                 />
             </div>
+            {
+                showControls &&
 
-            <Controllers
-                buttonProps={buttonProps}
-                setButtonProps={setButtonProps}
-            />
+                <Controllers
+                    buttonProps={buttonProps}
+                    setButtonProps={setButtonProps}
+                />
+
+            }
 
         </div>
     )
